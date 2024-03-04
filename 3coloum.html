@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="3coloum.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="wrapper">
+                <p class="logo_header">russia</p>
+                <div></div>
+                <nav class="nav_header">
+                    <ul class="header_list">
+                        <li class="list_a">
+                            <a href="2coloum.html">Home</a>
+                        </li>
+                        <li class="list_a">
+                            <a href="3coloum.html">Gallery</a>
+                        </li>
+                        <li class="list_a">
+                            <a href="1coloum.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="aside_left"></div>
+        <div class="main">
+            <div class="main_container">
+                <div>
+                    <p style="font-size: 60px; font-weight: 700; color:#90ADBA;">Gallery</p>
+                </div>
+                <div>
+                    <div class="slideshow">
+                        <div class="slideshow-item">
+                            <img src="image/photo.jpg" alt="">
+                            <div class="slideshow-item-text">
+                                <h5>Vyborg</h5>
+                                <p>Old town</p>
+                            </div>
+                        </div>
+                        <div class="slideshow-item">
+                            <img src="image/poezdka-v-kareliu.jpg" alt="">
+                            <div class="slideshow-item-text">
+                                <h5>Karelia</h5>
+                                <p>Marble Canyon of Ruskeala</p>
+                            </div>
+                        </div>
+                        <div class="slideshow-item">
+                            <img src="image/mur3.jpg" alt="">
+                            <div class="slideshow-item-text">
+                                <h5>Murmansk</h5>
+                                <p>Northern lights</p>
+                            </div>
+                        </div>
+                        <div class="slideshow-item">
+                            <img src="image/file40450.jpg" alt="">
+                            <div class="slideshow-item-text">
+                                <h5>Karelia</h5>
+                                <p>Marble Canyon of Ruskeala</p>            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 40px;">
+        
+                        <!-- Image Gallery section all image in one div -->
+                    <div class="gallery">
+                        <img src="image/viborg.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)">
+                        <img src="image/mur4.jpg" alt="Image 3" class="gallery-img" onclick="showImage(src)">
+                        <img src="image/frO3i.jpg" alt="Image 4" class="gallery-img" onclick="showImage(src)">
+                        <img src="image/poezdka-v-kareliu.jpg" alt="Image 6" class="gallery-img" onclick="showImage(src)">
+                        <img src="image/scale_1200.png" alt="Image 7" class="gallery-img" onclick="showImage(src)">
+                        <img src="image/ratusha.jpeg" alt="Image 8" class="gallery-img" onclick="showImage(src)">
+                        <img src="image/1623742045_23-pibig_info-p-kareliya-leto-priroda-krasivo-foto-23.jpg" alt="Image 9" class="gallery-img" onclick="showImage(src)">
+                        <img src="image/mur5.jpg" alt="Image 10" class="gallery-img" onclick="showImage(src)">   
+                        <img src="image/1623742045_23-pibig_info-p-kareliya-leto-priroda-krasivo-foto-23.jpg" alt="Image 9" class="gallery-img" onclick="showImage(src)">
+                        <img src="image/mur5.jpg" alt="Image 10" class="gallery-img" onclick="showImage(src)">            
+                    </div>
+                    
+                    <!-- Image containter where image will show in big size -->
+                        <div class="image-popup-container" id="imagePopup">
+                            <span class="close-button" onclick="closeImage()">×</span>
+                            <img src="" alt="Popup Image" id="popupImage">
+                        </div>
+                        <script src="script.js"></script>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="aside_right"></div>
+        <div class="footer">
+            <p style="color: white; font-size: larger; margin-left: 70px; margin-top: 35px;">Created for learning</p>
+            <nav style="justify-self: end; margin-right: 70px;" class="nav_header">
+                <ul class="header_list">
+                    <li class="list_a">
+                        <a href="2coloum.html">Home</a>
+                    </li>
+                    <li class="list_a">
+                        <a href="3coloum.html">Gallery</a>
+                    </li>
+                    <li class="list_a">
+                        <a href="1coloum.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,255 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+p, a{
+    font-family: Quicksand;
+    text-decoration: none;
+}
+
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+.container{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 10fr 0.3fr;
+    align-content: space-between;
+}
+
+.container > div{
+    background-color: #90ADBA
+}
+
+.header{
+    grid-column: 1/-1;
+    background: url(image/moskva.jpg);
+    align-items: center;
+    background-size: cover;
+}
+
+.wrapper{
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 3.5fr 370px 1fr;
+}
+
+.footer{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+}
+
+.logo_header{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    justify-self: end;
+    margin-top: 15px;
+}
+
+.header_list{
+    margin-top: 37px;
+}
+
+.list_a{
+    display: inline;
+    margin-right: 82px;
+    font-size: larger;
+
+}
+
+.header_list > :nth-child(3){
+    margin-right: 0;
+}
+
+.main{
+    display: grid;
+    grid-template-rows: 0.7fr 10fr;
+}
+
+.main > div{
+    margin: 30px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 3px 3px 3px 0 rgba(0,0,0,0.2);
+}
+
+.main1{
+    margin-bottom: 0px !important;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    padding: 30px;
+}
+
+.main1_title{
+    font-size: larger;
+    font-weight: 600;
+}
+
+.aside{
+    display: grid;
+}
+
+.aside > div{
+    margin: 30px;
+    margin-left: 0 !important;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 3px 3px 3px 0 rgba(0,0,0,0.2);
+}
+
+.viborg{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto auto auto;
+    justify-content: space-between;
+    padding: 30px !important;
+}
+
+.viborg_title{
+    grid-column: 1/-1;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.viborg_text{
+    margin-right: 20px;
+}
+
+.viborg_img{
+    background: url(image/photo.jpg);
+    height: 400px;
+    background-size: cover;
+    border: 0 !important;
+}
+
+.viborg_gallery{
+    gap: 15px;
+    margin-top: 20px;
+    grid-column: 1/-1;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.viborg_img1{
+    height: 250px;
+    background: url(image/scale_1200.png);
+    grid-column: 1/3;
+    background-size: cover;
+}
+
+.viborg_img2{
+    height: 250px;
+    background: url(image/viborg.jpg);
+    grid-column: 3/7;
+    background-size: cover;
+}
+
+.viborg_img3{
+    height: 300px;
+    background: url(image/frO3i.jpg);
+    grid-column: 1/4;
+    background-size: cover;
+}
+
+.viborg_img4{
+    height: 300px;
+    background: url(image/scale_1200.jfif);
+    background-size: cover;
+    grid-column: 4/7;
+}
+
+/*************************************/
+
+.Karelia_img{
+    background: url(image/1623742045_23-pibig_info-p-kareliya-leto-priroda-krasivo-foto-23.jpg);
+    height: 460px;
+    background-size: cover;
+    border: 0 !important;
+}
+
+.Karelia_img1{
+    height: 250px;
+    background: url(image/1646732196_36-sportishka-com-p-kareliya-vidi-turizm-krasivo-foto-42.jpg);
+    grid-column: 1/3;
+    background-size: cover;
+}
+
+.Karelia_img2{
+    height: 250px;
+    background: url(image/file40450.jpg);
+    grid-column: 3/7;
+    background-size: cover;
+}
+
+.Karelia_img3{
+    height: 300px;
+    background: url(image/poezdka-v-kareliu.jpg);
+    grid-column: 1/4;
+    background-size: cover;
+}
+
+.Karelia_img4{
+    height: 300px;
+    background: url(image/kareliya-karier-1.jpg);
+    background-size: cover;
+    grid-column: 4/7;
+}
+
+/*****************************************/
+
+.Murmansk_img{
+    background: url(image/mur1.jpg);
+    height: 390px;
+    background-size: cover;
+    border: 0 !important;
+}
+
+.Murmansk_img1{
+    height: 250px;
+    background: url(image/mur2.jfif);
+    grid-column: 1/3;
+    background-size: cover;
+}
+
+.Murmansk_img2{
+    height: 250px;
+    background: url(image/mur3.jpg);
+    grid-column: 3/7;
+    background-size: cover;
+}
+
+.Murmansk_img3{
+    height: 300px;
+    background: url(image/mur4.jpg);
+    grid-column: 1/4;
+    background-size: cover;
+}
+
+.Murmansk_img4{
+    height: 300px;
+    background: url(image/mur5.jpg);
+    background-size: cover;
+    grid-column: 4/7;
+}
+

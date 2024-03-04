@@ -1,0 +1,116 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+p, a{
+    font-family: Quicksand;
+    text-decoration: none;
+}
+
+
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    font-family: Quicksand;
+    text-decoration: none;
+    margin: 10px 0 10px 0;
+}
+
+ul li i{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.container{
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 330px auto 110px;
+}
+
+
+.container > div{
+    background-color: #90ADBA
+}
+
+.header{
+    
+    grid-column: 1/-1;
+    background: url(image/moskva.jpg);
+    align-items: center;
+    background-size: cover;
+}
+
+.wrapper{
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 3.5fr 370px 1fr;
+}
+
+.footer{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+}
+
+.logo_header{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    justify-self: end;
+    margin-top: 15px;
+}
+
+.header_list{
+    margin-top: 37px;
+}
+
+.list_a{
+    display: inline;
+    margin-right: 82px;
+    font-size: larger;
+
+}
+
+.header_list > :nth-child(3){
+    margin-right: 0;
+}
+
+.main{
+    grid-column: 1/-1;
+}
+
+.photo{
+    background: url(image/my_photo_wb.png);
+    height: 370px;
+    width: 320px;
+    background-size: cover;
+    margin: 10px 0 10px 0;
+}
+
+.main_container{
+    margin: 20px;
+    padding: 30px;
+    background-color: rgb(240, 240, 240);
+}
+
+.text{
+    font-size: 30px;
+}
+
